@@ -7,7 +7,7 @@ buildscript {
     repositories {
         maven {
             name 'prok'
-            url 'https://repo.prok.pw/'
+            url 'http://repo.yumc.pw/content/groups/public/'
         }
         maven {
             name 'forge'
@@ -47,7 +47,7 @@ repositories {
     }
     maven {
         name 'prok'
-        url 'https://repo.prok.pw/'
+        url 'http://repo.yumc.pw/content/groups/public/'
     }
     maven {
         name 'forge'
@@ -132,7 +132,7 @@ configurations {
 }
 
 dependencies {
-    bootstrap 'pw.prok:KBootstrap:0.2.+'
+    bootstrap 'pw.prok:KBootstrapX:0.2.+'
     libraries 'net.minecraft:launchwrapper:1.12@jar'
     libraries 'org.ow2.asm:asm-all:5.0.3'
     libraries 'com.typesafe.akka:akka-actor_2.11:2.3.3'
@@ -289,7 +289,7 @@ publishing {
     repositories {
         maven {
             name 'ProK'
-            url 'https://repo.prok.pw/'
+            url 'http://repo.yumc.pw/content/groups/public/'
             credentials {
                 username project.hasProperty('prokRepoUsername') ? prokRepoUsername : null
                 password project.hasProperty('prokRepoPassword') ? prokRepoPassword : null
@@ -324,7 +324,7 @@ repositories {
     clear()
     maven {
         name 'prok'
-        url 'https://repo.prok.pw/'
+        url 'http://repo.yumc.pw/content/groups/public/'
     }
     maven {
         name 'forge'
